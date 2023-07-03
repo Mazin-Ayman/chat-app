@@ -22,9 +22,9 @@ io.on('connection', socket => {
 app.get('/', (req, res) => {
   res.send('hi')
 })
-// app.listen(8080, 'http://192.168.1.99', () => console.log("hi"))
+app.listen(8080, () => console.log("hi"))
 
 
 
-server.listen(3000, '192.168.1.99', () => console.log("comnected to 3000")); 
+server.listen(3000, () => console.log("comnected to 3000")); 
 
